@@ -1,0 +1,50 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <!-- <ion-list *ngIf="items !== null">
+    <ion-item *ngFor="let item of items; let i = index" detail="false">
+      {{item.name}}
+      <br>
+      <ion-button slot="end" (click)="deleteRecording(item)" fill="clear" color="danger">
+        <ion-icon name="trash-outline" slot="icon-only"></ion-icon>
+      </ion-button>
+
+      <ion-button slot="end" (click)="playFile(item)" fill="clear" color="danger">
+        <ion-icon name="play"></ion-icon>
+      </ion-button>
+
+      <ion-button slot="end" (click)="togglePause(i)" fill="clear" color="danger">
+        <ion-icon name="pause"></ion-icon>
+      </ion-button>
+
+      <p>{{voiceduration}}</p>
+    </ion-item>
+  </ion-list> -->
+
+  <ion-button (click)="gopage()">Back</ion-button>
+
+</ion-content>
+
+
+<!-- <ion-footer>
+  <ion-toolbar>
+    <ion-row class="ion-align-items-center">
+      <ion-col size="10">
+        <span *ngIf="!recording">{{ recording ? 'Stop Recording' : 'Start Recording' }}</span>
+        <span *ngIf="recording">{{durationDisplay}}</span>
+      </ion-col>
+      <ion-col size="2">
+        <ion-button fill="clear" (click)="toggleRecording()">
+          <ion-icon name="mic-outline" slot="icon-only"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer> -->
